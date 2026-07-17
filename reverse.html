@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reverse OnlyFans — Professional Ignoring, Perfected.</title>
+<meta name="description" content="You pay me to ignore your photos. Finally, peace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple: #6A0DAD;
+    --purple-deep: #2c0a45;
+    --purple-black: #14081f;
+    --silver: #C0C0C0;
+    --silver-bright: #EDEDED;
+    --ink: #0b0510;
+    --text-dim: #9d8fb0;
+    --ok-green: #7CFFB2;
+    --radius: 2px;
+    --ease: cubic-bezier(.16,.84,.44,1);
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--ink);
+    color:var(--silver-bright);
+    font-family:'Space Grotesk', sans-serif;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  .mono{font-family:'JetBrains Mono', monospace;}
+
+  a{color:inherit; text-decoration:none;}
+
+  ::selection{background:var(--purple); color:#fff;}
+
+  :focus-visible{outline:2px solid var(--silver-bright); outline-offset:3px;}
+
+  /* Grain texture overlay, applied globally */
+  .grain{
+    position:fixed; inset:0; pointer-events:none; z-index:999;
+    opacity:0.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .container{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:22px 32px;
+    backdrop-filter:blur(10px);
+    background:linear-gradient(to bottom, rgba(11,5,16,0.85), transparent);
+  }
+  .logo{
+    font-weight:700; font-size:15px; letter-spacing:0.12em; text-transform:uppercase;
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo .dot{width:7px; height:7px; background:var(--purple); border-radius:50%; box-shadow:0 0 12px var(--purple);}
+  .nav-links{display:flex; gap:36px; font-size:13px; letter-spacing:0.04em; color:var(--text-dim);}
+  .nav-links a{transition:color .3s var(--ease);}
+  .nav-links a:hover{color:var(--silver-bright);}
+  .nav-cta{
+    font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:.03em;
+    padding:9px 18px; border:1px solid rgba(192,192,192,0.35); border-radius:var(--radius);
+    color:var(--silver-bright); transition:all .3s var(--ease);
+  }
+  .nav-cta:hover{background:var(--silver-bright); color:var(--ink); border-color:var(--silver-bright);}
+  @media(max-width:760px){ .nav-links{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex; align-items:center;
+    background:
+      radial-gradient(ellipse 900px 500px at 80% 15%, rgba(106,13,173,0.35), transparent 60%),
+      radial-gradient(ellipse 700px 700px at 10% 90%, rgba(106,13,173,0.18), transparent 60%),
+      linear-gradient(180deg, var(--purple-black) 0%, var(--ink) 100%);
+    padding-top:120px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;
+    width:100%;
+  }
+  @media(max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--text-dim);
+    letter-spacing:0.15em; text-transform:uppercase; margin-bottom:24px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{content:''; width:24px; height:1px; background:var(--purple); box-shadow:0 0 8px var(--purple);}
+
+  .hero h1{
+    font-size:clamp(2.6rem, 6vw, 4.6rem);
+    line-height:1.02;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    max-width:640px;
+  }
+  .hero h1 .fade{
+    background:linear-gradient(90deg, var(--silver-bright), var(--text-dim));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+
+  .tagline{
+    margin-top:26px;
+    font-size:clamp(1.05rem, 1.6vw, 1.3rem);
+    color:var(--silver);
+    font-style:italic;
+    max-width:480px;
+    border-left:2px solid var(--purple);
+    padding-left:18px;
+  }
+
+  .hero-actions{margin-top:44px; display:flex; flex-direction:column; gap:14px; align-items:flex-start;}
+
+  .btn-silver{
+    font-family:'JetBrains Mono', monospace;
+    background:var(--silver-bright); color:var(--purple-black);
+    padding:17px 34px; border-radius:var(--radius);
+    font-size:14px; font-weight:500; letter-spacing:0.02em;
+    display:inline-flex; align-items:center; gap:10px;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+    box-shadow:0 0 0 rgba(192,192,192,0);
+  }
+  .btn-silver:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 32px -8px rgba(192,192,192,0.45);
+  }
+  .btn-silver:active{transform:translateY(0);}
+  .btn-silver .arrow{transition:transform .3s var(--ease);}
+  .btn-silver:hover .arrow{transform:translateX(4px);}
+
+  .microcopy{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px; color:var(--text-dim); letter-spacing:0.04em;
+  }
+
+  /* Hero illustration: silhouette scene */
+  .scene{
+    position:relative;
+    aspect-ratio:4/5;
+    border-radius:6px;
+    overflow:hidden;
+    background:
+      radial-gradient(circle at 65% 35%, rgba(192,192,192,0.10), transparent 45%),
+      linear-gradient(160deg, #1c0930 0%, #0c0414 70%);
+    border:1px solid rgba(192,192,192,0.12);
+  }
+  .scene svg{width:100%; height:100%; display:block;}
+  .scene::after{
+    content:'';
+    position:absolute; inset:0;
+    box-shadow:inset 0 0 120px 40px rgba(0,0,0,0.6);
+    pointer-events:none;
+  }
+  .scene-caption{
+    position:absolute; bottom:16px; left:16px;
+    font-family:'JetBrains Mono', monospace; font-size:10.5px;
+    letter-spacing:0.08em; color:rgba(237,237,237,0.55);
+    text-transform:uppercase;
+  }
+
+  /* ---------- SECTION shared ---------- */
+  section{padding:120px 0;}
+  .section-head{max-width:640px; margin-bottom:64px;}
+  .section-label{
+    font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--purple);
+    letter-spacing:0.15em; text-transform:uppercase; margin-bottom:16px; display:block;
+  }
+  .section-head h2{
+    font-size:clamp(2rem, 4vw, 3rem); font-weight:700; letter-spacing:-0.01em; line-height:1.1;
+  }
+  .section-head p{margin-top:18px; color:var(--text-dim); font-size:1.05rem; max-width:520px;}
+
+  /* ---------- PROBLEM ---------- */
+  .problem{background:var(--ink);}
+  .problem-list{
+    display:grid; grid-template-columns:repeat(2, 1fr); gap:1px;
+    background:rgba(192,192,192,0.12);
+    border:1px solid rgba(192,192,192,0.12);
+  }
+  @media(max-width:700px){ .problem-list{grid-template-columns:1fr;} }
+  .problem-item{
+    background:var(--ink); padding:36px 32px;
+    transition:background .35s var(--ease);
+  }
+  .problem-item:hover{background:#150a20;}
+  .problem-item .num{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--purple); margin-bottom:14px; display:block;}
+  .problem-item p{font-size:1.1rem; color:var(--silver-bright); line-height:1.5;}
+
+  /* ---------- HOW IT WORKS ---------- */
+  .how{
+    background:linear-gradient(180deg, var(--ink) 0%, #17081f 100%);
+    border-top:1px solid rgba(192,192,192,0.08);
+    border-bottom:1px solid rgba(192,192,192,0.08);
+  }
+  .steps{display:flex; flex-direction:column; gap:0;}
+  .step{
+    display:grid; grid-template-columns:100px 1fr; gap:28px;
+    padding:32px 0; border-top:1px solid rgba(192,192,192,0.12);
+    align-items:baseline;
+  }
+  .step:last-child{border-bottom:1px solid rgba(192,192,192,0.12);}
+  .step .step-mark{font-family:'JetBrains Mono', monospace; color:var(--text-dim); font-size:13px;}
+  .step h3{font-size:1.35rem; font-weight:600; margin-bottom:8px;}
+  .step p{color:var(--text-dim); font-size:1rem; max-width:520px;}
+  .step.optional{opacity:0.75;}
+  .step.optional .step-mark{color:var(--purple);}
+
+  /* ---------- PRICING ---------- */
+  .pricing-grid{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:20px;
+  }
+  @media(max-width:1000px){ .pricing-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media(max-width:600px){ .pricing-grid{grid-template-columns:1fr;} }
+
+  .plan{
+    border:1px solid rgba(192,192,192,0.16);
+    border-radius:6px;
+    padding:32px 26px;
+    background:linear-gradient(180deg, rgba(106,13,173,0.06), transparent 40%);
+    position:relative;
+    display:flex; flex-direction:column;
+    transition:border-color .35s var(--ease), transform .35s var(--ease);
+  }
+  .plan:hover{border-color:rgba(192,192,192,0.4); transform:translateY(-4px);}
+  .plan.popular{border-color:var(--purple); box-shadow:0 0 0 1px var(--purple), 0 24px 60px -20px rgba(106,13,173,0.5);}
+  .plan-badge{
+    position:absolute; top:-12px; left:26px;
+    background:var(--purple); color:#fff;
+    font-family:'JetBrains Mono', monospace; font-size:10.5px; letter-spacing:0.08em;
+    padding:5px 10px; border-radius:20px; text-transform:uppercase;
+  }
+  .plan-name{font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-dim); margin-bottom:18px;}
+  .plan-price{font-size:2.4rem; font-weight:700; margin-bottom:6px;}
+  .plan-price span{font-size:0.95rem; color:var(--text-dim); font-weight:400;}
+  .plan-desc{color:var(--silver); font-size:0.95rem; margin-bottom:28px; line-height:1.5; flex-grow:1;}
+  .plan-btn{
+    text-align:center; padding:13px; border-radius:var(--radius);
+    border:1px solid rgba(192,192,192,0.35);
+    font-family:'JetBrains Mono', monospace; font-size:12.5px;
+    transition:all .3s var(--ease);
+  }
+  .plan-btn:hover{background:var(--silver-bright); color:var(--ink); border-color:var(--silver-bright);}
+  .plan.popular .plan-btn{background:var(--purple); border-color:var(--purple); color:#fff;}
+  .plan.popular .plan-btn:hover{background:#7d18c4;}
+
+  /* ---------- FEATURES ---------- */
+  .features{background:#0e0616;}
+  .feature-list{display:grid; grid-template-columns:repeat(2,1fr); gap:24px 48px;}
+  @media(max-width:700px){ .feature-list{grid-template-columns:1fr;} }
+  .feature{display:flex; gap:16px; align-items:flex-start; padding:6px 0;}
+  .feature .check{
+    width:22px; height:22px; flex-shrink:0; border-radius:50%;
+    border:1px solid var(--purple); display:flex; align-items:center; justify-content:center;
+    color:var(--purple); font-size:12px; margin-top:2px; font-family:'JetBrains Mono', monospace;
+  }
+  .feature p{color:var(--silver-bright); font-size:1.02rem;}
+  .feature small{display:block; color:var(--text-dim); font-size:0.85rem; margin-top:4px;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonials-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  @media(max-width:900px){ .testimonials-grid{grid-template-columns:1fr;} }
+  .testimonial{
+    border:1px solid rgba(192,192,192,0.14); border-radius:6px; padding:30px 28px;
+    background:rgba(255,255,255,0.015);
+  }
+  .testimonial .quote-mark{color:var(--purple); font-size:2.2rem; font-family:Georgia, serif; line-height:0.4; display:block; margin-bottom:18px;}
+  .testimonial p.quote{font-size:1.05rem; color:var(--silver-bright); line-height:1.55; margin-bottom:22px;}
+  .testimonial .attribution{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--text-dim); letter-spacing:0.03em;}
+
+  /* ---------- FINAL CTA ---------- */
+  .final-cta{
+    background:
+      radial-gradient(ellipse 800px 400px at 50% 0%, rgba(106,13,173,0.45), transparent 60%),
+      linear-gradient(180deg, var(--purple-deep) 0%, var(--purple-black) 100%);
+    text-align:center;
+    border-top:1px solid rgba(192,192,192,0.1);
+  }
+  .final-cta h2{font-size:clamp(2.2rem, 5vw, 3.4rem); font-weight:700; letter-spacing:-0.01em; max-width:680px; margin:0 auto 20px;}
+  .final-cta p{color:var(--silver); font-size:1.05rem; margin-bottom:44px;}
+  .final-cta .btn-silver{font-size:15px; padding:19px 40px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--ink); padding:48px 0 36px;
+    border-top:1px solid rgba(192,192,192,0.1);
+  }
+  .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
+  .footer-note{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--text-dim);}
+  .footer-links{display:flex; gap:28px; font-size:13px; color:var(--text-dim);}
+  .footer-links a:hover{color:var(--silver-bright);}
+  .footer-credit{
+    margin-top:24px; padding-top:24px; border-top:1px solid rgba(192,192,192,0.08);
+    font-family:'JetBrains Mono', monospace; font-size:11.5px; color:var(--text-dim); text-align:center;
+  }
+  .footer-credit a{color:var(--silver); border-bottom:1px dotted var(--text-dim);}
+  .footer-credit a:hover{color:var(--silver-bright); border-color:var(--silver-bright);}
+
+  /* ---------- WHATSAPP FLOAT ---------- */
+  .wa-float{
+    position:fixed; bottom:26px; right:26px; z-index:200;
+    display:flex; align-items:center; gap:10px;
+    background:var(--purple-black);
+    border:1px solid rgba(192,192,192,0.3);
+    padding:13px 18px; border-radius:40px;
+    font-family:'JetBrains Mono', monospace; font-size:12.5px;
+    box-shadow:0 12px 30px -10px rgba(0,0,0,0.6);
+    transition:all .35s var(--ease);
+  }
+  .wa-float:hover{border-color:var(--silver-bright); transform:translateY(-3px);}
+  .wa-dot{width:8px; height:8px; border-radius:50%; background:#5cf29a; box-shadow:0 0 10px #5cf29a; animation:pulse 2.4s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.35;}}
+
+  /* reveal on scroll */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav>
+  <div class="logo"><span class="dot"></span>REVERSE OF</div>
+  <div class="nav-links">
+    <a href="#problem">The Problem</a>
+    <a href="#how">How It Works</a>
+    <a href="#pricing">Plans</a>
+    <a href="#testimonials">Reviews</a>
+  </div>
+  <a href="#pricing" class="nav-cta">Get Ignored →</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Now accepting new subscribers who wish they weren't</span>
+      <h1>Professional <span class="fade">Ignoring,</span> Perfected.</h1>
+      <p class="tagline">"You pay me to ignore your photos. Finally, peace."</p>
+      <div class="hero-actions">
+        <a class="btn-silver" href="https://easypagex.github.com" target="_blank" rel="noopener">
+          Pay Me To Ignore You <span class="arrow">→</span>
+        </a>
+        <span class="microcopy">No likes. No comments. No replies. Pure bliss.</span>
+      </div>
+    </div>
+
+    <div class="scene reveal">
+      <!-- Illustrated silhouette scene: figure in hoodie, back turned, phone face down -->
+      <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a silhouetted figure in a hoodie, back turned, sitting at a table with a phone face down, lit by cold silver light">
+        <defs>
+          <radialGradient id="rim" cx="70%" cy="30%" r="60%">
+            <stop offset="0%" stop-color="#C0C0C0" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#C0C0C0" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#000" stop-opacity="0.6"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="500" fill="transparent"/>
+        <ellipse cx="290" cy="120" rx="180" ry="180" fill="url(#rim)"/>
+        <rect x="0" y="360" width="400" height="140" fill="url(#floor)"/>
+        <!-- table -->
+        <rect x="60" y="360" width="280" height="10" rx="2" fill="#1a0d28" stroke="#3a2050" stroke-width="1"/>
+        <rect x="80" y="370" width="12" height="70" fill="#150a20"/>
+        <rect x="308" y="370" width="12" height="70" fill="#150a20"/>
+        <!-- phone face down, silver edge glint -->
+        <rect x="185" y="352" width="55" height="30" rx="4" fill="#0c0611" stroke="#C0C0C0" stroke-width="1" stroke-opacity="0.6"/>
+        <rect x="188" y="355" width="49" height="2" fill="#C0C0C0" opacity="0.4"/>
+        <!-- figure: hoodie silhouette, seated, back turned -->
+        <path d="M155 360
+                 C150 300 155 250 175 220
+                 C185 205 190 190 190 175
+                 C190 145 210 125 240 125
+                 C270 125 290 150 288 180
+                 C287 195 292 208 302 222
+                 C322 250 328 300 322 360
+                 Z" fill="#0a0410"/>
+        <!-- hood -->
+        <path d="M205 175 C205 145 220 128 245 128 C270 128 284 148 282 175
+                 C282 190 275 200 262 205 C250 209 236 209 225 205 C212 200 205 190 205 175 Z"
+              fill="#0e0716" stroke="#2c1740" stroke-width="1.5"/>
+        <!-- hood rim silver light -->
+        <path d="M205 175 C205 150 218 133 242 130" fill="none" stroke="#C0C0C0" stroke-width="2" stroke-opacity="0.5" stroke-linecap="round"/>
+        <!-- shoulders / hoodie strings -->
+        <line x1="238" y1="215" x2="235" y2="245" stroke="#3a2050" stroke-width="2" stroke-linecap="round"/>
+        <line x1="248" y1="215" x2="251" y2="245" stroke="#3a2050" stroke-width="2" stroke-linecap="round"/>
+        <!-- ambient purple glow bottom left -->
+        <ellipse cx="70" cy="470" rx="140" ry="60" fill="#6A0DAD" opacity="0.12"/>
+      </svg>
+      <span class="scene-caption">Status: Unbothered</span>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">The Problem</span>
+      <h2>Tired of Being Seen?</h2>
+      <p>Attention is exhausting. Every post is a request for a response you never wanted to owe anyone.</p>
+    </div>
+    <div class="problem-list">
+      <div class="problem-item reveal"><span class="num">01</span><p>Everyone always wants your attention.</p></div>
+      <div class="problem-item reveal"><span class="num">02</span><p>Endless likes, comments, and DMs.</p></div>
+      <div class="problem-item reveal"><span class="num">03</span><p>Social media burnout is real.</p></div>
+      <div class="problem-item reveal"><span class="num">04</span><p>You just want to post in peace.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">How It Works</span>
+      <h2>Three steps to being completely overlooked.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step-mark">STEP 01</span>
+        <div><h3>You upload your photos.</h3><p>Vacation, gym, dinner, whatever. Send it all. It goes into the void willingly.</p></div>
+      </div>
+      <div class="step reveal">
+        <span class="step-mark">STEP 02</span>
+        <div><h3>I completely ignore them. Professionally.</h3><p>No scroll-past guilt. No obligatory heart emoji. Trained, certified, committed indifference.</p></div>
+      </div>
+      <div class="step reveal">
+        <span class="step-mark">STEP 03</span>
+        <div><h3>You get peace of mind and satisfaction.</h3><p>The quiet knowledge that somewhere, someone saw your post and simply chose not to care.</p></div>
+      </div>
+      <div class="step optional reveal">
+        <span class="step-mark">OPTIONAL</span>
+        <div><h3>Extended ignoring available.</h3><p>Stories, comments, even voice notes — all left on read, or better, never opened at all.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Subscription Tiers</span>
+      <h2>Pick your level of disappearance.</h2>
+      <p>Every plan is a deeper, more sincere form of not caring.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="plan reveal">
+        <div class="plan-name">Silent</div>
+        <div class="plan-price">$9<span>/mo</span></div>
+        <p class="plan-desc">Basic ignoring of up to 30 photos. A gentle introduction to being overlooked.</p>
+        <a class="plan-btn" href="https://easypagex.github.com" target="_blank" rel="noopener">Subscribe</a>
+      </div>
+      <div class="plan reveal">
+        <div class="plan-name">Ghost</div>
+        <div class="plan-price">$19<span>/mo</span></div>
+        <p class="plan-desc">Full ignoring, plus I won't even open your messages. Read receipts stay firmly off.</p>
+        <a class="plan-btn" href="https://easypagex.github.com" target="_blank" rel="noopener">Subscribe</a>
+      </div>
+      <div class="plan popular reveal">
+        <span class="plan-badge">Most Popular</span>
+        <div class="plan-name">Void</div>
+        <div class="plan-price">$39<span>/mo</span></div>
+        <p class="plan-desc">Complete digital disappearance. I pretend you don't exist, convincingly.</p>
+        <a class="plan-btn" href="https://easypagex.github.com" target="_blank" rel="noopener">Subscribe</a>
+      </div>
+      <div class="plan reveal">
+        <div class="plan-name">VIP Blackout</div>
+        <div class="plan-price">$79<span>/mo</span></div>
+        <p class="plan-desc">I ignore you so hard I forget you ever subscribed. Total, luxurious oblivion.</p>
+        <a class="plan-btn" href="https://easypagex.github.com" target="_blank" rel="noopener">Subscribe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Features</span>
+      <h2>What you're really paying for.</h2>
+    </div>
+    <div class="feature-list">
+      <div class="feature reveal"><span class="check">✓</span><p>Zero interaction guarantee<small>Contractually, professionally silent.</small></p></div>
+      <div class="feature reveal"><span class="check">✓</span><p>Read receipts? Never turned on.<small>You will never know if I saw it. I did.</small></p></div>
+      <div class="feature reveal"><span class="check">✓</span><p>No awkward "haha" replies<small>The most dishonest three letters in the app.</small></p></div>
+      <div class="feature reveal"><span class="check">✓</span><p>Daily confirmation: "I saw nothing."<small>Delivered once a day, whether you asked or not.</small></p></div>
+      <div class="feature reveal"><span class="check">✓</span><p>Cancel anytime<small>I probably won't notice either way.</small></p></div>
+      <div class="feature reveal"><span class="check">✓</span><p>Photos fade to gray on hover<small>Try it above. That's the whole point.</small></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Testimonials</span>
+      <h2>Loved by people who wanted less love.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <span class="quote-mark">"</span>
+        <p class="quote">Best $19 I've ever spent. She ignored my vacation photos perfectly.</p>
+        <div class="attribution">— Kevin, 34, Ghost Plan</div>
+      </div>
+      <div class="testimonial reveal">
+        <span class="quote-mark">"</span>
+        <p class="quote">Finally someone who doesn't care. 10 out of 10 peace.</p>
+        <div class="attribution">— Sarah M., Void Plan</div>
+      </div>
+      <div class="testimonial reveal">
+        <span class="quote-mark">"</span>
+        <p class="quote">My therapist recommended this. Changed my life.</p>
+        <div class="attribution">— Anonymous, VIP Blackout</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container reveal">
+    <h2>Ready for Total Digital Peace?</h2>
+    <p>One subscription. Zero attention. Forever.</p>
+    <a class="btn-silver" href="https://easypagex.github.com" target="_blank" rel="noopener">
+      Subscribe to Being Ignored <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-row">
+      <div class="logo"><span class="dot"></span>REVERSE OF</div>
+      <div class="footer-links">
+        <a href="#problem">The Problem</a>
+        <a href="#how">How It Works</a>
+        <a href="#pricing">Plans</a>
+      </div>
+      <span class="footer-note mono">© 2026 Reverse OnlyFans. Nothing will be acknowledged.</span>
+    </div>
+    <div class="footer-credit">
+      Built with <a href="https://easypagex.github.com" target="_blank" rel="noopener">EasyPageX</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/10000000000" target="_blank" rel="noopener">
+  <span class="wa-dot"></span> Message me… I won't reply
+</a>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Hero scene appears immediately even without scroll
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('in'));
+  });
+</script>
+
+</body>
+</html>
